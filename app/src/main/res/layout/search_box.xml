@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/search_box_bg">
+
+    <ImageButton
+        android:id="@+id/search_box_btn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/search_box_btn_bg"
+        android:src="@drawable/ic_address_book"
+        android:layout_marginStart="3dp"
+        android:contentDescription="Pick contact from contact Activity"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_box_entry"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        app:layout_constraintStart_toEndOf="@id/search_box_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Selectionnez et entrez"
+        android:background="@drawable/search_box_edit_text_bg"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
